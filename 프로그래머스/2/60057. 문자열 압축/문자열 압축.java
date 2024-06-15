@@ -1,10 +1,5 @@
 import java.util.*;
 
-/* 
-한 문자열안에서 여러 단위로 자르는 것은 불가능
-즉, 압축심볼의 크기를 찾는 문제임
-*/
-
 class Solution {
     public int solution(String s) {
         int minLen = s.length();
@@ -14,7 +9,6 @@ class Solution {
             StringBuilder compact = new StringBuilder();
             for(int idx = 0; idx < s.length(); idx += unit){
                 String now;
-                
                 if(idx + unit >= s.length()){
                     now = s.substring(idx);
                     
