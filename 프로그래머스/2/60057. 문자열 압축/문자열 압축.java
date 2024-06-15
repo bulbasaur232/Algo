@@ -3,7 +3,7 @@ import java.util.*;
 class Solution {
     public int solution(String s) {
         int minLen = s.length();
-        for(int unit = 1; unit <= s.length(); unit++){
+        for(int unit = 1; unit <= s.length() / 2; unit++){
             String prev = "";
             int redundant = 1;
             StringBuilder compact = new StringBuilder();
