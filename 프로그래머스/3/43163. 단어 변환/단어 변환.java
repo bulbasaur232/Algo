@@ -18,9 +18,7 @@ class Solution {
         for(int i = 0; i < words.length; i++){
             if(words[i].equals(begin)){
                 visited[i] = true;
-            } else if(words[i].equals(target)){
-                visited[i] = true;
-            }
+            } 
         }
         
         List<String> list = Arrays.asList(words);
